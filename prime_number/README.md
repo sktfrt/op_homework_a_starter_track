@@ -92,7 +92,7 @@ pytest -v
 Запуск одного теста:
 
 ```bash
-pytest -k test_is_prime_fast
+pytest -k test_is_prime_fast_basic
 ```
 
 ---

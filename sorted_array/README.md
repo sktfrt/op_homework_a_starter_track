@@ -129,7 +129,7 @@ pytest -v
 Запуск одного теста:
 
 ```bash
-pytest -k test_binary_search
+pytest -k test_binary_search_found
 ```
 
 ---
