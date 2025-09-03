@@ -20,7 +20,6 @@ raise NotImplementedError("implement me")
 
 ```python
 def my_sort(arr: list[int]) -> list[int]:
-    ...
 ```
 
 ---
