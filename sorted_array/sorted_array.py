@@ -94,6 +94,8 @@ class SortedArray:
     Хранит данные в отсортированном виде и поддерживает методы insert, delete, get, has.
     """
 
+    data = []
+
     def __init__(self, data: Optional[list[int]] = None):
         """
         Инициализация массива.
