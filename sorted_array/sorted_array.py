@@ -3,14 +3,14 @@ import random
 
 
 def my_sort(arr: list[int]) -> list[int]:
-    nums = [random.uniform(-100, 100) for i in range(10)]
-    sorted_nums = []
+    #nums = arr
+    #sorted_nums = []
     
-    while len(nums) != 0:
-        min_num = nums.pop(nums.index(min(nums)))
-        sorted_nums.append(min_num)
+    while len(arr) != 0:
+        min_num = arr.pop(arr.index(min(arr)))
+        arr.append(min_num)
      
-    return(sorted_nums)
+    return arr
 
 
 def bubble_sort(arr: list[int]) -> list[int]:
@@ -61,12 +61,12 @@ def merge_sort(arr: list[int]) -> list[int]:
 class SortedArray:
     data = []
 
-    def __init__(self, data: Optional[list[int]] = None):
-        self.data = data.sort()
+    def __init__(self, data: Optional[list[int]] = []):
+        self.data = selection_sort(data)
         
 
     def insert(self, value: int) -> None:
-        self.data.add(value)
+        self.data.append(value)
         self.data = selection_sort(self.data)
     
 

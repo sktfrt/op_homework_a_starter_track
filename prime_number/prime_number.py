@@ -37,4 +37,6 @@ def is_prime_fast(num: int, k = 5) -> bool:
 
 def find_largest_prime(limit: int, use_fast: bool = True) -> int:
     if limit < 2: return -1
-    return max([num for num in range(2, limit + 1) if is_prime_fast(num)])
+    # return max([num for num in range(2, limit + 1) if is_prime_fast(num)])
+    for num in range(limit, 1, -1):
+        if is_prime(num): return num
